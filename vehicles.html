@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BATMAN - GOTHAM KNIGHT</title>
+    <link rel="stylesheet" type="text/css" href="css_files/vehicles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--for the swimper/ swiperjs-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html">
+                <img src="batmanLogo.png" id="batmanLogo" title="BATMAN">
+            </a>
+    </header>
+    <nav>  
+        <div class="navbar">
+            <label for="hamburger">&#9776;</label>
+            <label for="hamburger">BATMAN</label>
+            <input type="checkbox" id="hamburger">
+            <div class="menu">
+                <a href="index.html" id="overview">BATMAN</a>
+                <a href="allies.html" id="allies">ALLIES</a>
+                <a href="vehicles.html" id="vehicles">VEHICLES</a>
+                <a href="villain.html" id="villains">VILLAINS</a>
+                <a href="https://www.imdb.com/list/ls059646235/" id="movies">MOVIES</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+      <section id="section1">
+        <div class="photo_container">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+
+                <!--slide1-->
+                <div class="swiper-slide">
+                  <img src="images_vehicles/vehicles.jpg" id="vehicles_photo">
+                </div>
+                <!--slide2-->
+                <div class="swiper-slide">
+                  <img src="images_vehicles/vehicles1.jpg" id="vehicles_photo">
+                </div>
+                <!--slide3-->
+                <div class="swiper-slide">
+                  <img src="images_vehicles/vehicles2.jpg" id="vehicles_photo">
+                </div>
+            </div>
+            <!-- If we need pagination/indicator at the bottom -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <p id="p1">&emsp;Fans all over the globe know of the Batmobile and its iconic status. 
+          It's impossible to see Batman without his trusty Batmobile much like James Bond and his Aston Martin. However,
+          Batman has had several types of vehicles over the years including the Batcycle which was featured heavily in The Dark Knight.
+      </p>
+      </section>
+      <div class="vehicles_container">
+          <h2 id="header1">VEHICLES</h2>
+          <br>
+          <img src="images_vehicles/batplane.jpg" class="photos" id="planes"><br>
+          <button type="button" class="buttons" id="planes_button">PLANES</button><br>
+          <img src="images_vehicles/vehicles.jpg" class="photos" id="batmobiles"><br>
+          <button type="button" class="buttons" id="batmobile_button">BATMOBILES</button><BR>
+          <img src="images_vehicles/batcycle3.jpg" class="photos" id="cycles"><br>
+          <button type="button" class="buttons" id="cycle_button">MOTORCYCLES</button>
+      </div>
+
+      <!--planes-->
+      <div id="planes_modal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close" id="close_planes">&times;</span>
+              <h2>BATWINGS</h2>
+            </div>
+            <div class="modal-body">
+              <img src="images_vehicles/plane1.jpg" class="planes" id="plane1"><br>
+              <img src="images_vehicles/plane2.jpg" class="planes" id="plane2"><br>
+              <img src="images_vehicles/plane3.jpg" class="planes" id="plane3"><br>
+              <img src="images_vehicles/plane4.jpg" class="planes" id="plane4"><br>
+              <img src="images_vehicles/plane5.jpg" class="planes" id="plane5"><br>
+              <img src="images_vehicles/plane6.jpg" class="planes" id="plane6"><br>
+            </div>
+            <div class="modal-footer">
+              <h3>BATWINGS</h3>
+            </div>
+          </div>
+        </div>
+
+        <!--batmobiles-->
+        <div id="batmobiles_modal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close" id="close_batmobiles">&times;</span>
+              <h2>BATMOBILES</h2>
+            </div>
+            <div class="modal-body">
+              <img src="images_vehicles/batmobile1.jpg" class="batmobiles" id="batmobile1"><br>
+              <img src="images_vehicles/batmobile2.jpg" class="batmobiles" id="batmobile2"><br>
+              <img src="images_vehicles/batmobile3.jpg" class="batmobiles" id="batmobile3"><br>
+              <img src="images_vehicles/batmobile4.jpg" class="batmobiles" id="batmobile4"><br>
+            </div>
+            <div class="modal-footer">
+              <h3>BATMOBILES</h3>
+            </div>
+          </div>
+        </div>
+
+        <!--batcycles-->
+        <div id="cycles_modal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close" id="close_cycles">&times;</span>
+              <h2>BATMOBILES</h2>
+            </div>
+            <div class="modal-body">
+              <img src="images_vehicles/batcycle3.jpg" class="cycles" id="cycle1"><br>
+              <img src="images_vehicles/batcycle4.jpg" class="cycles" id="cycle2"><br>
+              <img src="images_vehicles/batcycle2.jpg" class="cycles" id="cycle3"><br>
+              <img src="images_vehicles/batcycle1.jpg" class="cycles" id="cycle4"><br>
+            </div>
+            <div class="modal-footer">
+              <h3>BATMOBILES</h3>
+            </div>
+          </div>
+        </div>
+      </main>
+
+    <footer>
+        <div class="icons">
+            <p class="footerText"><b>FOLLOW ME:</b></p><br>
+            <a href="https://www.facebook.com/rj.sanjuan.8">
+                <i class="fa fa-facebook fa-3x" id="facebook"></i>
+            </a>
+                
+            <a href="https://www.instagram.com/rj.sanjuan.8/">
+                <i class="fa fa-instagram fa-3x" id="instagram"></i>
+            </a>
+
+            <a href="https://www.twitter.com">
+                <i class="fa fa-twitter fa-3x" id="twitter"></i>
+            </a>
+            <br><br><br><br>
+            <p class="footerText"><b>CONTACT ME:</b></p>
+            <a href="mailto:renesanjuan3302@gmail.com">
+                <p id="email">renesanjuan3302@gmail.com</p>
+            </a>
+        </div>
+    </footer>
+
+    <script src="javascript_files/vehicles.js">
+    </script>
+    <!--for photo slider-->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            loop: true,
+            //for autoplay/autoslide
+            autoplay:{
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                //to make indicators clickable
+                clickable: true,
+
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    
+</body>
+</html>

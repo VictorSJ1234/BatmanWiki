@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Montserrat:wght@300&display=swap');
+html, body{
+    width: 100%;
+    margin: 0px;
+    background-color: gold;
+}
+header{
+    background-color: #9f1e20;
+}
+#batmanLogo{
+    width: 120px;  
+    margin: 0; 
+}
+nav{
+    position: sticky;   
+    top: 0;
+    background-color: black;
+    border-top: solid white;
+    border-bottom: solid white;
+    z-index: 1000;
+}
+.navbar{
+    padding: 3px;
+    text-align: center;
+    height: 70px;
+    line-height: 80px;
+}
+.menu a{
+    padding: 10px;
+    clear: right;
+    text-decoration: none;
+    color: white;
+    margin: 0px 15px ;
+    line-height: 60px;
+    font-size: 18px;
+    font-weight: 550;
+}
+.menu #villains{
+    background-color: gold;
+    color: black;
+    border-radius: 5px;
+}
+.menu #overview:hover, .menu #allies:hover, .menu #vehicles:hover, .menu #gadgets:hover, .menu #villains:hover{
+    background-color: crimson;
+    color: gold;
+}
+label{
+    margin-right:40px;
+    line-height: 60px;
+    display: none;
+    width: 70px;
+    float: right;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+#hamburger{
+    display: none;
+}
+#overview{
+    color: GOLD;
+}
+@media only screen and (max-width: 700px){
+    /*navbar after minimized*/
+    .navbar{
+        background-color: black;
+    }
+    label{
+        margin: 5px 20px 0 0;
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 25px;
+    }
+    .menu{
+        text-align: center;
+        width: 100%;    
+        display: none;
+
+    }
+    .menu a{
+        display: block;
+        background-color: black;
+        color: white;
+        border: solid 1px;
+        margin: 0;
+    }
+    #hamburger:checked + .menu{
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .menu #overview:hover, .menu #allies:hover, .menu #vehicles:hover, .menu #weapons:hover, .menu #villains:hover{
+        background-color: crimson;
+        color: black;
+    }
+}
+@media only screen and (max-width: 750px){
+    /*photos after minimized*/
+    #villain_photo{
+        width: 80%;
+    }
+    #villain1, #villain2, #villain3, #villain4, #villain5, #villain6,
+    #villain1_button, #villain2_button, #villain3_button, #villain4_button, 
+    #villain5_button, #villain6_button{
+        width: 70%;
+    }
+}
+#header1{
+    font-family: 'Montserrat', sans-serif;
+}
+.icons{
+    text-align: center;
+}
+.icons a{
+    text-decoration: none;
+    padding: 5px 15px;
+    color: black;
+    padding-bottom: 0;
+}
+.icons #facebook{
+    border: solid 2px black;
+    padding: 5px;
+    width: 50px;
+    background-color: gold;
+
+}
+.icons #instagram{
+    border: solid 2px black;
+    padding: 5px;
+    width: 50px;
+    background-color: gold;
+}
+.icons #twitter{
+    border: solid 2px black;
+    padding: 5px;
+    width: 50px;
+    background-color: gold;
+}
+.footerText{
+    text-align: center;
+    margin: 0px;
+}
+#email{
+    text-align: center;
+    margin: 0px;
+}
+footer{
+    background-color: gold;
+    padding: 20px;
+}
+
+.photo_container{
+    text-align: center;
+}
+#villain_photo{
+    margin-top: 25px;
+    height: 400px;
+    border: solid 4px black;
+    border-radius: 20px;
+}
+#villain_photo:hover{
+    border-color: cyan;
+}
+#header1{
+    margin: 0;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-color: crimson;
+    padding: 20px;
+}
+.villains_container{
+    background-color: black;
+    text-align: center;
+}
+.photos{
+    width: 650px;
+    cursor: pointer;
+    border: solid 2px black;
+    padding:0;
+    border-radius: 20px;
+}
+.buttons{
+    width: 650px;
+    background-color: gold;
+    color: black;
+    font-weight: bold;
+    padding: 1em 2em;
+    border: solid 2px gray;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+.buttons:hover{
+    background-color: crimson;
+    color: white;
+}
+#villain1:hover ~ #villain1_button, #villain2:hover ~ #villain2_button, #villain3:hover ~ #villain3_button ,
+#villain4:hover ~ #villain4_button ,#villain5:hover ~ #villain5_button, #villain6:hover ~ #villain6_button{
+    background-color: crimson;
+    color: white;
+}
+p{
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+} 
+#p1{
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+/*for modal*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    margin: 10% auto;
+    width: 60%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+}
+
+.modal-header h2,
+.modal-footer h3 {
+    margin: 0;
+    padding: 5px;
+}
+
+.modal-header {
+    background: var(--modal-color);
+    padding: 15px;
+    color: #fff;
+    background-color: gold;
+    color: black;
+    font-size: large;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.modal-body {
+    padding: 10px 20px;
+    background: crimson;
+    color: white;
+}
+
+.modal-footer {
+    background: var(--modal-color);
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: gold;
+    color: black;
+}
+
+.close {
+    color: black;
+    float: right;
+    font-size: 30px;
+    color: black;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+h2{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+#p1{
+    color: white;
+}
+#section1{
+    background-image: url("batmanWallpaper.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100%;
+    padding: 5px;   
+}
+
+/*for the swiper*/
+.swiper{
+    width: 80%;
+}
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color: white;   
+}
+.swiper .swiper-button-prev:hover, .swiper .swiper-button-next:hover{
+    color: cyan;
+}
+.swiper .swiper-pagination-bullet{
+    background-color: white;
+}
+.swiper .swiper-pagination-bullet:hover{
+    background-color: cyan;
+}

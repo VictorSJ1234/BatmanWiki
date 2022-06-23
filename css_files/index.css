@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Montserrat:wght@300&display=swap');
+html, body{
+    width: 100%;
+    margin: 0px;
+    background-color: gold;
+}
+main{
+    background-image: url("batmanWallpaper.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5px;  
+}
+#batmanLogo{
+    width: 120px;  
+    margin: 0; 
+}
+header{
+    background-color: #9f1e20;
+}
+nav{
+    position: sticky;   
+    top: 0;
+    background-color: black;
+    border-top: solid white;
+    border-bottom: solid white;
+    z-index: 10000;
+}
+.navbar{
+    padding: 3px;
+    text-align: center;
+    height: 70px;
+    line-height: 80px;
+}
+.menu a{
+    padding: 10px;
+    clear: right;
+    text-decoration: none;
+    color: white;
+    margin: 0px 15px ;
+    line-height: 60px;
+    font-size: 18px;
+    font-weight: 550;
+}
+.menu #overview{
+    background-color: gold;
+    color: black;
+    border-radius: 5px;
+}
+.menu #overview:hover, .menu #allies:hover, .menu #vehicles:hover, .menu #gadgets:hover, .menu #villains:hover{
+    background-color: crimson;
+    color: gold;
+}
+label{
+    margin-right:40px;
+    line-height: 60px;
+    display: none;
+    width: 70px;
+    float: right;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+#hamburger{
+    display: none;
+}
+
+@media only screen and (max-width: 700px){
+    .navbar{
+        background-color: black;
+    }
+    label{
+        margin: 5px 20px 0 0;
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 25px;
+    }
+    .menu{
+        text-align: center;
+        width: 100%;    
+        display: none;
+
+    }
+    .menu a{
+        display: block;
+        background-color: black;
+        color: white;
+        border: solid 1px;
+        margin: 0;
+    }
+    #hamburger:checked + .menu{
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .menu #overview:hover, .menu #allies:hover, .menu #vehicles:hover, .menu #weapons:hover, .menu #villains:hover{
+        background-color: crimson;
+        color: black;
+    }
+}
+.photos_container{
+    margin-top: 0px;
+    text-align: center;
+}
+.photos{
+    height: 360px;
+    margin-right: 20px;
+    margin-top: 30px;
+    border: solid 4px black;
+    border-radius: 20px;
+}
+.photos:hover{
+    border-color: cyan;
+}
+.photos2{
+    height: 360px;
+    margin-right: 20px;
+    margin-top: 30px;
+    border: solid 4px black;
+    border-radius: 20px;
+}
+.photos2:hover{
+    border-color: cyan;
+}
+p{
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 35px;
+}
+.info{
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    opacity: 0.8;
+}
+h2{
+    border: solid 3px white;
+    margin: 0;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-color: crimson;
+    padding: 20px;
+    border-radius: 20px;
+}
+.icons{
+    text-align: center;
+}
+.icons a{
+    text-decoration: none;
+    padding: 5px 15px;
+    color: black;
+    padding-bottom: 0;
+}
+.icons #facebook{
+    border: solid 2px black;
+    padding: 5px;
+    width: 50px;
+    background-color: gold;
+
+}
+.icons #instagram{
+    border: solid 2px black;
+    padding: 5px;
+    width: 50px;
+    background-color: gold;
+}
+.icons #twitter{
+    border: solid 2px black;
+    padding: 5px;
+    width: 50px;
+    background-color: gold;
+}
+.footerText{
+    text-align: center;
+    margin: 0px;
+}
+#email{
+    text-align: center;
+    margin: 0px;
+}
+footer{
+    background-color: gold;
+    padding: 20px;
+}
+
+/*for the swiper*/
+.swiper{
+    width: 80%;
+}
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color: white;   
+}
+.swiper .swiper-button-prev:hover, .swiper .swiper-button-next:hover{
+    color: cyan;
+}
+.swiper .swiper-pagination-bullet{
+    background-color: white;
+}
+.swiper .swiper-pagination-bullet:hover{
+    background-color: cyan;
+}
+

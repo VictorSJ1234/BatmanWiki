@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BATMAN - GOTHAM KNIGHT</title>
+    <link rel="stylesheet" type="text/css" href="css_files/villain.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--for the swimper/ swiperjs-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html">
+                <img src="batmanLogo.png" id="batmanLogo" title="BATMAN">
+            </a>
+    </header>
+    <nav>  
+        <div class="navbar">
+            <label for="hamburger">&#9776;</label>
+            <label for="hamburger">BATMAN</label>
+            <input type="checkbox" id="hamburger">
+            <div class="menu">
+                <a href="index.html" id="overview">BATMAN</a>
+                <a href="allies.html" id="allies">ALLIES</a>
+                <a href="vehicles.html" id="vehicles">VEHICLES</a>
+                <a href="villain.html" id="villains">VILLAINS</a>
+                <a href="https://www.imdb.com/list/ls059646235/" id="movies">MOVIES</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+      <section id="section1">
+        <div class="photo_container">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+                <!--slide1-->
+                <div class="swiper-slide">
+                  <img src="images_villains/villains.jpg" id="villain_photo">
+                </div>
+                <!--slide2-->
+                <div class="swiper-slide">
+                  <img src="images_villains/villains1.jpg" id="villain_photo">
+                </div>
+                <!--slide3-->
+                <div class="swiper-slide">
+                  <img src="images_villains/villains2.jpg" id="villain_photo">
+                </div>
+            </div>
+            <!-- If we need pagination/indicator at the bottom -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <p id="p1">&emsp;Although <strong>Batman</strong> is, himself, one of the most popular comic book characters ever and needs no further introduction, 
+            one of the things that certainly made him as appealing as he is are his villains. Batman’s Rogues Gallery, as the villains are 
+            collectively called, contains numerous names that have appeared in the several decades long history of the characters. In fact,
+            Batman’s villains are so good that people usually consider them to be the best villains in the comic book industry.
+        </p>
+      </section>
+      <div class="villains_container">
+          <h2 id="header1">"VILLAINS"</h2>
+          <br>
+          <img src="images_villains/villain1.jpg" class="photos" id="villain1"><br>
+          <button type="button" class="buttons" id="villain1_button">THE JOKER</button><br>
+          <img src="images_villains/villain2.jpg" class="photos" id="villain2"><br>
+          <button type="button" class="buttons" id="villain2_button">RA'S AL GHUL</button><BR>
+          <img src="images_villains/villain3.jpg" class="photos" id="villain3"><br>
+          <button type="button" class="buttons" id="villain3_button">TWO FACE</button><br>
+          <img src="images_villains/villain4.jpg" class="photos" id="villain4"><br>
+          <button type="button" class="buttons" id="villain4_button">HARLEY QUINN</button><br>
+          <img src="images_villains/villain5.jpg" class="photos" id="villain5"><br>
+          <button type="button" class="buttons" id="villain5_button">THE RIDDLER</button><BR>
+          <img src="images_villains/villain6.jpg" class="photos" id="villain6"><br>
+          <button type="button" class="buttons" id="villain6_button">BANE</button><br>
+      </div>
+
+      <!--joker-->
+      <div id="villain1_modal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close" id="close_villain1">&times;</span>
+            <h2>THE JOKER</h2>
+          </div>
+          <div class="modal-body">
+            <p>"THE CLOWN PRINCE OF CRIME"</p>
+                <p class="members_description">
+                    No name strikes terror into the hearts of Gotham’s citizens quite like the Joker. In a city overrun with larger-than-life 
+                    criminals, the always-laughing villain stands alone. A complete psychopath with no moral compass whatsoever, the Joker, 
+                    whose real name and identity remain completely unknown, is characterized by his chalk-white skin, green hair and a 
+                    permanent rictus grin stretched across his face. But there isn’t a single thing funny about this particular clown,
+                    who only finds humor in the suffering of others.</p>
+                
+                <p class="members_description">The Joker first appeared in Gotham City around the same time that the Batman arrived on the 
+                    scene, and since their very first confrontation, the Clown Prince of Crime has been the Dark Knight’s most formidable 
+                    nemesis. While Batman represents justice and order, the Joker is his complete opposite, seeing himself as an agent of 
+                    chaos, the living embodiment of the cruel randomness of fate. The Joker’s psychosis causes his personality to shift between 
+                    goofy prankster and mass murderer on a dime, making it impossible to predict his next move. It’s this unpredictability that
+                    really makes him such a dangerous opponent.</p>
+          </div>
+          <div class="modal-footer">
+            <h3>THE CLOWN PRINCE OF CRIME</h3>
+          </div>
+        </div>
+      </div>
+
+        <!--ra's al ghul-->
+        <div id="villain2_modal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close" id="close_villain2">&times;</span>
+              <h2>RA'S AL GHUL</h2>
+            </div>
+            <div class="modal-body">
+              <p>"THE DEMON'S HEAD"</p>
+                  <p class="members_description">
+                    Ra's al Ghul, sometimes written Rā's al Ghūl, is a supervillain and enemy of Batman. A former healer who's name 
+                    translates to "head of the demon", he is a criminal mastermind and leader of the League of Assassins. In most stories, 
+                    Ra's' goal is to save the Earth from possible ecological devastation, often by destroying most of the planet's population
+                    or bringing the world under his control. Though brilliant master of strategy with knowledge in various fields, 
+                    Ra's al Ghul's greatest asset are his Lazarus Pits, which have allowed him to live centuries and even restore himself 
+                    from death.</p>
+            </div>
+            <div class="modal-footer">
+              <h3>THE DEMON'S HEAD</h3>
+            </div>
+          </div>
+        </div>
+
+        <!--Dent-->
+        <div id="villain3_modal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close" id="close_villain3">&times;</span>
+              <h2>TWO FACE</h2>
+            </div>
+            <div class="modal-body">
+              <p>"HARVEY DENT"</p>
+                  <p class="members_description">
+                    Harvey Dent was Gotham City's amiable and courteous district attorney and one of Batman's strongest allies 
+                    (until Sal "Boss" Maroni threw acid in his face, hideously scarring him). It also fractured his mental state,
+                    causing him to become Two-Face, a criminal mastermind obsessed with duality and the number two and is one of Batman's 
+                    greatest enemies. His former good luck charm, a "two-headed" silver dollar with one side defaced, has been seen as a
+                    reflection of Dent's half-scarred visage. He flips it to decide the fates of his victims. Despite Batman's efforts to 
+                    reform his former ally, Dent is consumed by his fixation on chance. His crimes are designed to prove his diametric
+                    philosophy.</p>
+            </div>
+            <div class="modal-footer">
+              <h3>HARVEY DENT</h3>
+            </div>
+          </div>
+        </div>
+
+        <!--quinn-->
+        <div id="villain4_modal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close" id="close_villain4">&times;</span>
+              <h2>HARLEY QUINN</h2>
+            </div>
+            <div class="modal-body">
+              <p>"DR. HARLEEN QUINZEL"</p>
+                  <p class="members_description">
+                    Sometimes love can make people do crazy things. Other times? It drives them completely insane. Such is the case with 
+                    Harley Quinn, formerly Dr. Harleen Quinzel. A promising psychologist and intern at Arkham Asylum in Gotham City, Harleen 
+                    was given the chance to get up close and personal with the Joker, an experience that wound up ending…badly. Harleen became 
+                    obsessed with her subject, and after falling madly in love with the Clown Prince of Crime, she helped him escape the asylum.
+                    Her love for the Joker inspired Harleen to adopt a new identity, that of Harley Quinn, the Joker’s sidekick-slash-love 
+                    interest—whether he wanted one or not. (Most of the time? He did not.)</p>
+                  
+                  <p class="members_description">n time, Harley came to realize the Joker was holding her back and she 
+                    struck out on her own. She became an entrepreneur and a member of several slightly less-than-reputable 
+                    super teams (including the Suicide Squad), Gotham City’s all-girl gang the Gotham City Sirens, and a traveling 
+                    sideshow. Along the way Harley has become one of the most popular super-villains in the DC Universe, 
+                    thanks in part to her versatility, charisma and cheery-but-deranged outlook on life. After all, as Harley would say, if you're going to go a little crazy, you may as well sit back and enjoy the ride!</p>
+            </div>
+            <div class="modal-footer">
+              <h3>DR. HARLEEN QUINZEL"</h3>
+            </div>
+          </div>
+        </div>
+
+        <!--riddler-->
+        <div id="villain5_modal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close" id="close_villain5">&times;</span>
+              <h2>THE RIDDLER</h2>
+            </div>
+            <div class="modal-body">
+              <p>"EDWARD NYGMA"</p>
+                  <p class="members_description">
+                    Known for his purple domino mask and green question mark-covered costume, either as a skintight cat suit or a 
+                    business suit and bowler hat and his special question mark shaped cane, the Riddler is obsessed with riddles, puzzles, 
+                    and word games. He delights in forewarning police and Batman of his capers by sending them complex clues.
+                  </p>
+                  
+                  <p class="members_description">Like most Batman villains, the Riddler has become a darker, 
+                    more three-dimensional character in recent years. Whereas he was once portrayed as a playful but sane criminal trickster, 
+                    he is now the victim of an intense obsessive compulsion. This was first introduced in the 1966 issue of Batman 
+                    (titled, "The Riddle-less Robberies of the Riddler") in which he tried to refrain from leaving a riddle, but failed. 
+                    This compulsion has been a recurring theme, albeit with a darker edge, as shown in a 1999 issue of Batman Gotham Adventures, 
+                    in which he tried to commit a crime without leaving a riddle, but fails: "You don't understand. .. I really didn't want to 
+                    leave you any clues. I really planned never to go back to Arkham Asylum. But I left you a clue anyway. So I... I have to go
+                    back there. Because I might need help. I... I might actually be crazy."</p>
+            </div>
+            <div class="modal-footer">
+              <h3>EDWARD NIGMA</h3>
+            </div>
+          </div>
+        </div>
+
+        <!--bane-->
+        <div id="villain6_modal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close" id="close_villain6">&times;</span>
+              <h2>BANE</h2>
+            </div>
+            <div class="modal-body">
+              <p>"ANTONIO DIEGO"</p>
+                  <p class="members_description">
+                    Bane is an escaped convict from an island prison in South America and a super-villain/assassin.
+                    Bane has abnormal physical strength as a result of having undergone experiments involving a derivative of the drug Venom. 
+                    He became known as "The Man Who Broke the Bat" when he broke Batman's back, forcing Bruce Wayne to give up the Batman 
+                    persona while he recuperated. Bane was originally created by writers Chuck Dixon and Doug Moench and artist, Graham Nolan, 
+                    from a concept by Denny O'Neil. He first appeared in Batman: Vengeance of Bane #1 (January 1993).</p>
+            </div>
+            <div class="modal-footer">
+              <h3>ANTONIO DIEGO</h3>
+            </div>
+          </div>
+        </div>
+    </main>
+    <footer>
+        <div class="icons">
+            <p class="footerText"><b>FOLLOW ME:</b></p><br>
+            <a href="https://www.facebook.com/rj.sanjuan.8">
+                <i class="fa fa-facebook fa-3x" id="facebook"></i>
+            </a>
+                
+            <a href="https://www.instagram.com/rj.sanjuan.8/">
+                <i class="fa fa-instagram fa-3x" id="instagram"></i>
+            </a>
+
+            <a href="https://www.twitter.com">
+                <i class="fa fa-twitter fa-3x" id="twitter"></i>
+            </a>
+            <br><br><br><br>
+            <p class="footerText"><b>CONTACT ME:</b></p>
+            <a href="mailto:renesanjuan3302@gmail.com">
+                <p id="email">renesanjuan3302@gmail.com</p>
+            </a>
+        </div>
+    </footer>
+    <script src="javascript_files/villain.js">
+    </script>
+    <!--for photo slider-->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            loop: true,
+            //for autoplay/autoslide
+            autoplay:{
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                //to make indicators clickable
+                clickable: true,
+
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>

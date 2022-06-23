@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BATMAN - GOTHAM KNIGHT</title>
+    <link rel="stylesheet" type="text/css" href="css_files/index.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--for the swimper/ swiperjs-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html">
+                <img src="batmanLogo.png" id="batmanLogo" title="BATMAN">
+            </a>
+        </div>
+    </header>
+    <nav>  
+        <div class="navbar">
+            <label for="hamburger">&#9776;</label>
+            <label for="hamburger">BATMAN</label>
+            <input type="checkbox" id="hamburger">
+            <div class="menu">
+                <a href="index.html" id="overview">BATMAN</a>
+                <a href="allies.html" id="allies">ALLIES</a>
+                <a href="vehicles.html" id="vehicles">VEHICLES</a>
+                <a href="villain.html" id="villains">VILLAINS</a>
+                <a href="https://www.imdb.com/list/ls059646235/" id="movies">MOVIES</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="photos_container">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                    <!--slide1-->
+                    <div class="swiper-slide">
+                        <img src="images_index/photo.jpg" class="photos" id="photo1">
+                        <img src="images_index/photo2.jpg" class="photos" id="photo2">
+                        <img src="images_index/photo3.jpg" class="photos" id="photo3">
+                    </div>
+                    
+                    <!--slide2-->
+                    <div class="swiper-slide">
+                        <img src="images_index/photo4.jpg" class="photos" id="photo4">
+                        <img src="images_index/photo5.jpg" class="photos" id="photo5">
+                        <img src="images_index/photo6.jpg" class="photos" id="photo6">
+                    </div>
+                    
+                    <!--slide3-->
+                    <div class="swiper-slide">
+                        <img src="images_index/photo7.jpg" class="photos" id="photo7">
+                        <img src="images_index/photo8.jpg" class="photos" id="photo8">
+                        <img src="images_index/photo9.jpg" class="photos" id="photo9">
+                    </div>
+
+                </div>
+                <!-- If we need pagination/indicator at the bottom -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <br>
+        <div class="info">
+            <h2 id="header1">THE DARK KNIGHT</h2>
+            <p id="p1" class="p">&emsp;<strong>Batman</strong> is a superhero published by DC Comics. Operating in Gotham City, 
+                he serves as its protector, using the symbol of a bat to strike fear into the hearts of criminals. 
+                Unlike other superheroes, Batman is often depicted to lack "superpowers", instead using lifelong training and equipment to fight crime. 
+                His secret identity is Bruce Wayne, a rich playboy and philanthropist who swore to fight crime after witnessing his parents' brutal murder. 
+                He has served as a member of various teams, including the Justice League, the Justice Society of America and the Outsiders. 
+                Batman is also the founder and leader of various teams, including the Batman Family, Batmen of All Nations and Batman Incorporated.
+                He also goes by numerous nicknames, including "The Dark Knight", "the Caped Crusader", "World's Greatest Detective" 
+                and the "Defender of Gotham". 
+            </p>
+            <h2 id="header2">HISTORY</h2>
+            <div class="photos_container">
+                <img src="images_index/bobkane.jpg" class="photos2" id="photo10">
+            </div>
+            <p id="p2" class="p">&emsp;Co-created by artist <strong>Bob Kane</strong> and writer <strong>Bill Finger</strong>, Batman made his first appearance in Detective Comics #27 (May, 1939).
+                He quickly became a popular character soon after his introduction, and eventually gained his own comic publication a year after his debut. 
+                As the decades wore on, differing takes on the character emerged. The late 1960s Batman television series utilized a camp aesthetic 
+                associated with the character for years after the show ended. Various creators worked to return the character to his dark roots,
+                culminating in Frank Miller's 1986 Dark Knight series. It and the success of director Tim Burton's 1989 Batman motion picture helped
+                reignite popular interest in the character. A cultural icon, Batman is often considered one of the most well-known and popular 
+                superheroes of all-time. He has been licensed and adapted into a variety of media ranging from live-action television and film,
+                various forms of animation, and video games. 
+            </p>
+        </div>
+    </main>
+    <footer>
+        <div class="icons">
+            <p class="footerText"><b>FOLLOW ME:</b></p><br>
+            <a href="https://www.facebook.com/rj.sanjuan.8">
+                <i class="fa fa-facebook fa-3x" id="facebook"></i>
+            </a>
+                
+            <a href="https://www.instagram.com/rj.sanjuan.8/">
+                <i class="fa fa-instagram fa-3x" id="instagram"></i>
+            </a>
+
+            <a href="https://www.twitter.com">
+                <i class="fa fa-twitter fa-3x" id="twitter"></i>
+            </a>
+            <br><br><br><br>
+            <p class="footerText"><b>CONTACT ME:</b></p>
+            <a href="mailto:renesanjuan3302@gmail.com">
+                <p id="email">renesanjuan3302@gmail.com</p>
+            </a>
+        </div>
+    </footer>
+    <script src="javascript_files/index.js">
+    </script>
+
+    <!--for photo slider-->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            loop: true,
+            
+            //for autoplay/autoslide
+            autoplay:{
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                //to make indicators clickable
+                clickable: true,
+
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>
